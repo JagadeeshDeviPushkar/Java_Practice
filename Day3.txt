@@ -1,0 +1,111 @@
+1. WAP to read 3 subjects marks and print total marks and avg marks.
+
+
+
+
+
+2.  WAP to read basic salary and find gross salary.
+
+      gross_salary= HRA+ DA + Basic
+
+             HRA is 80% on basic
+             DA  is 78% on basic
+
+
+
+              10000    -->   HRA:  8000   DA: 7800
+
+                  (80/100)*10000  :          0
+
+
+
+
+   Control statements:
+
+                 1. Conditional control statements :  if , if else, else if, nested if,  switch case.
+                 2. Loops    :  for , while, do while.
+
+
+
+
+
+
+  if condition
+   {
+
+    }
+   else{
+
+   }
+================================
+
+Arithmentic operators:   + - * / %
+
+    10/2    : 5
+    10%2  : 0
+
+
+Relational operators: 
+
+    <  <=  > >= == !=              ==> true/false
+
+Assignment operator:
+
+    =
+
+
+
+
+   =    vs ==
+   
+    a=90;
+    a==90;
+
+
+import java.util.Scanner;
+
+class Example1{
+
+  public static void main(String args[]){
+
+ Scanner s=new Scanner(System.in);
+    System.out.println("Enter marks to check pass or fail");
+
+    int marks=s.nextInt();
+
+    if(marks>=50){
+      System.out.println("Pass");
+    }
+    else{
+      System.out.println("Fail");
+    }
+    
+  }
+}
+==========================================================
+
+1. WAP to read number and check it is +ve or -ve
+2. WAP to read number and check it is even or odd.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

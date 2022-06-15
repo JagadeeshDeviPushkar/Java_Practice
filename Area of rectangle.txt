@@ -1,0 +1,12 @@
+8.Write a programme to find area of rectangle
+
+class Reactanglearea
+  {
+    public static void main (String args[]){
+      int w = 15;
+      int h = 25;
+      int area;
+      area = w*h;
+      System.out.println("Area of rectangle is: "+area);
+    }
+  }

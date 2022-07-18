@@ -1,20 +1,33 @@
-// Write a JAVA program to calculate factorial of a number.
-
-import java.util.Scanner;
+import java.util.*;
 class Factorial
   {
-    public static void main(String args[])
+    public static void fact(int n)
     {
-      Scanner sc = new Scanner(System.in);
-      System.out.println("Enter a number");
-      int num = sc.nextInt();
-      int a = 1;
-      int fact = 1;
-      while(a<=num)
-        {
-          fact = fact*a;
-          a++;
-        }
-      System.out.println("The factorial of a number is: "+fact);
+      int fact=1;
+      if(n==0)
+      {
+        fact=0; 
+        System.out.println(fact);
+      }
+      else if(n==1)
+      {
+        fact=1;
+        System.out.println(fact);
+      }
+      else
+      {
+        for(int i=1;i<=n;i++)
+          {
+            fact=fact*i;
+
+          }
+        System.out.println(fact);
+      }
     }
+
+      public static void main(String args[])
+        {
+        Factorial.fact(5);
+        }
+
   }

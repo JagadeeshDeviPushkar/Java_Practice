@@ -1,30 +1,45 @@
-// Write a JAVA program to check whether a number is palindrome or not.
+/*  JFM1T8_Assignment4:
+
+    Write a program to check whether a string is a Palindrome.
+    Prompt the user input from the terminal.
+    
+    Sample input: Malayalam
+    
+    Expected output: Malayalam is a Palindrome
+*/
 
 import java.util.Scanner;
-class Palindrome
+
+public class Palindrome {
+
+//main method
+  public static void main(String args[])
   {
-    public static void main(String args[])
+
+//declare varible
+    String rev = "";
+
+//take input from user
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a string:");
+    String str = sc.nextLine();
+
+/* 
+   divide the whole string into two halves and compare each character in the 
+   first half with each character in the second half in reverse.  
+   If both are equal then it is a palindrome else print it is not a palindrome 
+*/
+    for(int i=str.length()-1; i>=0; i--)
+      {
+        rev = rev+str.charAt(i);
+      }
+    if(str.toLowerCase().equals(rev.toLowerCase()))
     {
-      Scanner sc = new Scanner(System.in);
-      System.out.println("Enter a number: ");
-      int num = sc.nextInt();
-      int temp;
-      int rev = 0;
-      int rem = 0;
-      temp = num;
-      while(num!=0)
-        {
-          rem = num%10;
-          rev = rev*10+rem;
-          num = num/10;
-        }
-      if(temp==rev)
-          {
-            System.out.println("It is a palindrome number");
-          }
-          else
-          {
-            System.out.println("It is not a palindrome number");
-          }
+        System.out.println(str+" is a palindrome");
+    }
+    else
+    {
+      System.out.println(str+" is not a palindrome");
     }
   }
+}
